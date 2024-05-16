@@ -1,0 +1,18 @@
+// Global
+@import "global/variable";
+@import 'global/reset';
+@import "global/global";
+
+//Components
+@import "components/header";
+@import "components/footer";
+
+//Pages Accueil
+@import "pages/accueil/home";
+@import "pages/accueil/tools";
+@import "pages/accueil/recent";
+@import "pages/accueil/reviews";
+
+//Partials
+@import "partials/burger";
+
