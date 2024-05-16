@@ -1,0 +1,36 @@
+.home {
+  padding: 1.5rem;
+  height: 90vh;
+
+  &__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    overflow: hidden;
+
+    img {
+      display: block;
+      margin: auto;
+      width: 100%;
+
+    }
+  }
+
+  &__scroll {
+    margin: 0.5rem 0;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .home__image {
+    img {
+      width: 75%;
+    }
+  }
+}
