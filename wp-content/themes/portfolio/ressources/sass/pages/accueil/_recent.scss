@@ -1,0 +1,41 @@
+.recent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #0c0c0c;
+    border-radius: 10px;
+    transition: 0.4s ease;
+
+
+    a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: white;
+      font-family: Poppins, Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      img {
+        height: 400px;
+        max-height: 500px;
+      }
+    }
+  }
+  &__cta{
+    margin: 1.5rem auto 2.5rem;
+  }
+}
+
+.recent__card:hover {
+  background: $orange;
+  transform: scale(1.02);
+  a {
+    color: #0c0c0c;
+  }
+}
