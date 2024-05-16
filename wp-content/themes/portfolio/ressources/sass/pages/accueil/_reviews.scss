@@ -1,0 +1,42 @@
+.reviews {
+  margin-top: 3rem;
+
+  &__slider {
+    margin: 4rem auto 1rem;
+    max-width: 400px;
+
+    &__container {
+      overflow-x: scroll;
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      padding: 1.5rem;
+
+      &__article {
+        font-family: Poppins, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        min-width: 100%;
+        max-width: 100%;
+        font-weight: 500;
+        font-style: italic;
+
+        &__name {
+          text-align: end;
+          color: $bleu;
+          margin-top: 2rem;
+          font-family: Quantum, Times, serif;
+        }
+      }
+    }
+  }
+  &__cta {
+    margin: 0 auto;
+  }
+  span{
+    width: 3px;
+    height: 3px;
+    padding: 1px 8px;
+    border-radius: 100%;
+    background: #8f8f8f;
+  }
+}
