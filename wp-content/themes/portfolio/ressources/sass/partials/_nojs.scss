@@ -1,0 +1,22 @@
+noscript{
+  position: sticky;
+  top: 0;
+  display: block;
+  padding: 1rem 2rem;
+  background: $orange;
+  z-index: 4;
+p{
+  color: white;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-weight: 500;
+  a{
+    text-decoration: none;
+    color: #0c0c0c;
+    font-weight: 700;
+  }
+}
+
+}
