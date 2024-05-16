@@ -2,8 +2,8 @@
   .navigation {
     &__container {
       position: relative;
-      transform: translateY(-110vh);
-      transition: 0.5s ease;
+      transform: translateY(-130vh);
+      transition: 0.3s ease;
 
       &__menu {
         position: absolute;
@@ -55,6 +55,7 @@
     position: relative;
     user-select: none;
     visibility: visible;
+    transition: 0.3s ease;
   }
 
   .navicon {
