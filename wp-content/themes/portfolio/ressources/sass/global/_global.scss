@@ -1,0 +1,88 @@
+//Global config
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+section {
+  padding: 0 24px;
+}
+
+.cta_group {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  align-items: center;
+  &__primary_btn{
+    background: $orange;
+    border-radius: 5px;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0c0c0c;
+    padding: 0.8rem 1rem;
+  }
+}
+
+
+//Hidden classes
+.hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (min-width: 500px) {
+  .desktop_hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mobile_hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+
+@media (min-width: 800px) {
+  .mid_hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+
