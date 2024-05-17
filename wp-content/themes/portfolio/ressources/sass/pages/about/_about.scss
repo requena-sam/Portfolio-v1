@@ -1,0 +1,28 @@
+.about{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &__img{
+    padding: 1.5rem;
+    background: #0c0c0c;
+    border-radius: 10px;
+  }
+  &__content{
+    font-family: $poppins;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    h3{
+      font-size: 1.5rem;
+      font-weight: 700;
+      span{
+        margin-top: 15px;
+        display: block;
+        font-family: Quantum, Times, serif;
+        font-size: 1.15rem;
+        color: $orange;
+        font-weight: initial;
+      }
+    }
+  }
+}
