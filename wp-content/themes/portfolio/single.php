@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <main>
-        <h2><?= get_field('projet-title'); ?></h2>
+        <h2 role="heading" aria-level="2" class="main_title"><?= get_field('projet-title'); ?></h2>
         <a class="back_projects" href="<?= get_field('back-link'); ?>">Retour au projets</a>
         <section class="description">
             <div class="description__content">
