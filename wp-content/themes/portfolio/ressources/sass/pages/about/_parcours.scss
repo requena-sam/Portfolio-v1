@@ -1,0 +1,27 @@
+.parcours {
+  margin: 4rem 0 4rem;
+  &__container {
+    display: grid;
+    gap: 3.5rem;
+    margin: 2rem 0 0;
+
+    &__item {
+      font-family: $poppins;
+      display: flex;
+      flex-direction: column;
+
+      &__school {
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+        font-size: 1.2rem;
+
+      }
+
+      &__duration {
+        font-family: Quantum, Times, Serif;
+        margin-bottom: 0.8rem;
+        color: $bleu;
+      }
+    }
+  }
+}
