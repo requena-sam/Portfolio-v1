@@ -1,0 +1,69 @@
+.color {
+  margin-top: 4rem;
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 3rem 0 12rem;
+
+    &:after {
+      content: "";
+      background-image: url("../../../img/click_to_copy.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 8rem;
+    }
+
+    li {
+      padding: 2.5rem 0;
+
+      p {
+        font-family: $poppins;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0;
+        transition: 0.2s linear;
+      }
+    }
+
+    li:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+
+    li:last-child {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}
+
+.color__container__item {
+  position: relative; /* Définition de la position relative pour positionner la boîte de dialogue */
+}
+
+.color__container__item__copy {
+  font-family: $poppins;
+  position: absolute;
+  display: inline-block;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $orange;
+  color: black;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.color__container__item.copied .color__container__item__copy {
+  opacity: 1;
+}
