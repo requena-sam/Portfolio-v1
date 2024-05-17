@@ -16,6 +16,19 @@
       font-family: $poppins;
       display: flex;
       flex-direction: column;
+      position: relative;
+      padding-left: 70px;
+      &:before {
+        content: "";
+        background-image: url("../../../img/checkbox.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        left: -5px;
+        position: absolute;
+      }
 
       &__school {
         margin-bottom: 0.5rem;
