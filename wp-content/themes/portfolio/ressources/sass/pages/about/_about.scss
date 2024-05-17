@@ -1,4 +1,10 @@
+.about_title:after{
+  content: 'A propos de moi';
+  color: $orange;
+  left: 60px;
+}
 .about{
+
   display: flex;
   flex-direction: column;
   gap: 2rem;

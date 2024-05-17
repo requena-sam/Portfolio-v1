@@ -1,7 +1,12 @@
 .skills {
-  h2 {
-
-  }
+ &__title{
+   &:after{
+     content: 'Outils de développements';
+     color: $bleu;
+     left: 20px;
+     top:60px;
+   }
+ }
 &__container{
   margin: 5rem auto;
   display: grid;

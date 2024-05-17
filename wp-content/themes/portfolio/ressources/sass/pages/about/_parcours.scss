@@ -1,5 +1,12 @@
 .parcours {
   margin: 4rem 0 4rem;
+  &__title{
+    margin-bottom: 3rem;
+    &:after{
+      content: 'Mon parcours';
+      color: $bleu;
+    }
+  }
   &__container {
     display: grid;
     gap: 3.5rem;

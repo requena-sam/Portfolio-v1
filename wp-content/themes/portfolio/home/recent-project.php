@@ -1,5 +1,5 @@
 <section class="recent">
-    <h2 class="recent__title" role="heading" aria-level="2">Projets récents</h2>
+    <h2 class="recent__title second_title" role="heading" aria-level="2">Projets récents</h2>
     <?php if (have_rows('recent-list')) :
         while (have_rows('recent-list')) : the_row();
             $title = get_sub_field('recent-title');

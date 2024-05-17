@@ -1,5 +1,11 @@
 .reviews {
   margin-top: 3rem;
+  &__title{
+    &:after{
+      content: 'Retours client';
+      color: $bleu;
+    }
+  }
 
   &__slider {
     margin: 4rem auto 1rem;

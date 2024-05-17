@@ -22,10 +22,13 @@ section {
   justify-content: center;
   gap: 1.2rem;
   align-items: center;
-  &__primary_btn{
+
+  &__primary_btn {
     background: $orange;
     border-radius: 5px;
   }
+
+
   a {
     display: block;
     text-decoration: none;
@@ -38,8 +41,42 @@ section {
   }
 }
 
-.main_title{
+.main_title {
+  position: relative;
   margin-left: 1.5rem;
+  margin-bottom: 2.5rem;
+  display: block;
+  padding-right: 4rem;
+}
+
+.main_title:after {
+  font-family: Quantum, Times, serif;
+  text-transform: initial;
+  font-size: 1.8rem;
+  position: absolute;
+  font-style: italic;
+  left: 100px;
+  top: 30px;
+  z-index: -1;
+  width: fit-content;
+}
+
+.second_title {
+  position: relative;
+  margin-bottom: 2.5rem;
+  display: block;
+}
+
+.second_title:after {
+  font-family: Quantum, Times, serif;
+  width: fit-content;
+  text-transform: initial;
+  font-size: 1.8rem;
+  position: absolute;
+  font-style: italic;
+  left: 100px;
+  top: 30px;
+  z-index: -1;
 }
 
 //Hidden classes

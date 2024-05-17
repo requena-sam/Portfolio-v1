@@ -1,5 +1,5 @@
 <section class="reviews">
-    <h2 role="heading" class="review__title">Retours clients</h2>
+    <h2 role="heading" class="reviews__title second_title">Retours clients</h2>
     <div class="reviews__slider">
         <div class="reviews__slider__container">
             <?php if (have_rows('review-list')) :
