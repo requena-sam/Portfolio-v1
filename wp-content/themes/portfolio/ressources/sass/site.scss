@@ -6,6 +6,7 @@
 //Components
 @import "components/header";
 @import "components/footer";
+@import "components/collab";
 
 //Pages Accueil
 @import "pages/accueil/home";
@@ -21,6 +22,10 @@
 @import "pages/about/parcours";
 @import "pages/about/workstep";
 
+//Page Single Projects
+@import "pages/single/description";
+@import "pages/single/information";
+@import "pages/single/color";
 //Partials
 @import "partials/burger";
 @import "partials/nojs";

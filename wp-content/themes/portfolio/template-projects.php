@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <main>
-        <h2 role="heading" aria-level="2" class="main_title">Mes projets</h2>
+        <h2 role="heading" aria-level="2" class="all_projects_title main_title">Mes projets</h2>
         <section class="projects">
             <h3 class="hidden" role="heading" aria-level="3">Liste de mes projets</h3>
             <?php if (have_rows('project-list')) :
