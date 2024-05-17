@@ -1,0 +1,42 @@
+.description {
+  display: grid;
+  gap: 3rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &__text {
+      font-family: $poppins;
+    }
+  }
+
+  &__img {
+    padding: 1.5rem;
+    background: #0c0c0c;
+    border-radius: 10px;
+  }
+}
+
+.single_project_head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  .back_projects {
+    padding: 0 1.5rem 0;
+    font-family: $poppins;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #0c0c0c;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
