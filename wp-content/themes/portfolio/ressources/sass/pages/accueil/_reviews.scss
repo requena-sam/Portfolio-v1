@@ -9,7 +9,7 @@
 
   &__slider {
     margin: 4rem auto 1rem;
-    max-width: 400px;
+    max-width: 25rem;
 
     &__container {
       overflow-x: scroll;
@@ -29,7 +29,7 @@
         &__name {
           text-align: end;
           color: $bleu;
-          margin-top: 2rem;
+          margin-top: 4rem;
           font-family: Quantum, Times, serif;
         }
       }
@@ -38,11 +38,30 @@
   &__cta {
     margin: 0 auto;
   }
-  span{
-    width: 3px;
-    height: 3px;
-    padding: 1px 8px;
-    border-radius: 100%;
-    background: #8f8f8f;
+}
+@media (min-width: 800px) {
+  .reviews{
+    &__slider{
+      margin-top: 6rem;
+      max-width: 30rem;
+      &__container{
+        &__article{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .reviews{
+    &__slider{
+      max-width: 35rem;
+      &__container{
+        &__article{
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
 }

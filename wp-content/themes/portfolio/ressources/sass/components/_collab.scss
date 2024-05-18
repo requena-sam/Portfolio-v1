@@ -15,3 +15,15 @@
     margin-bottom: 1rem;
   }
 }
+@media (min-width: 800px) {
+  .collab{
+    margin: 7rem 0;
+    &__title{
+      font-size: 3rem;
+    }
+    &__text{
+      max-width: 30rem;
+    }
+  }
+  
+}

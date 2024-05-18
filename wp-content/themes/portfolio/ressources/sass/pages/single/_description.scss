@@ -20,6 +20,7 @@
 }
 
 .single_project_head {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,16 +28,69 @@
   margin-bottom: 2rem;
 
   h2 {
+    margin-top: 0;
     margin-bottom: 0;
   }
 
   .back_projects {
-    padding: 0 1.5rem 0;
+    position: relative;
+    padding: 0 3rem;
     font-family: $poppins;
     font-size: 1.2rem;
     text-decoration: none;
     color: #0c0c0c;
     font-weight: 500;
     text-transform: uppercase;
+
+    &:before {
+      content: "";
+      background-image: url("../../../img/fleche.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 1.25rem;
+      width: 1.125rem;
+      position: absolute;
+      top: 0;
+      left: 1.5rem;
+      rotate: 180deg;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .description {
+    margin-top: 4rem;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    &__content {
+      justify-content: center;
+
+      .cta_group {
+        justify-content: left;
+      }
+
+      &__text {
+
+        h2 {
+          margin-top: 0;
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    &__img {
+      height: 18rem;
+      max-width: 30rem;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .single_project_head {
+    margin-top: 5rem;
+    flex-direction: row;
+    align-items: center;
   }
 }

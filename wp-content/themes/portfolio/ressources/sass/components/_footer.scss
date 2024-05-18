@@ -42,8 +42,7 @@
       li {
         a {
           .social_logo {
-            width: 50px;
-            background: white;
+            width: 2.5rem;
           }
         }
       }
@@ -86,7 +85,7 @@
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 780px) {
   .footer {
     &__upper {
       flex-direction: row;

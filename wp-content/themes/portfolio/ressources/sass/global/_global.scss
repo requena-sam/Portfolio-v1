@@ -5,6 +5,10 @@ img {
   object-fit: cover;
 }
 
+p {
+  line-height: 1.2;
+}
+
 h2 {
   font-size: 2rem;
   font-family: $poppins;
@@ -14,7 +18,7 @@ h2 {
 }
 
 section {
-  padding: 0 24px;
+  padding: 0 1.5rem;
 }
 
 .cta_group {
@@ -27,19 +31,22 @@ section {
     background: $orange;
     border-radius: 5px;
   }
-  &__secondary_btn{
+
+  &__secondary_btn {
     position: relative;
     padding: 0.8rem 1.5rem 0.8rem 0;
+    z-index: -1;
 
-    &:after{
+
+    &:after {
       content: "";
       background-image: url("../../img/fleche.png");
       background-size: 100%;
       background-repeat: no-repeat;
-      height: 20px;
-      width: 20px;
+      height: 1.25rem;
+      width: 1.125rem;
       position: absolute;
-      top: 22%;
+      top: 26%;
       right: 0;
     }
   }
@@ -59,8 +66,7 @@ section {
 
 .main_title {
   position: relative;
-  margin-left: 1.5rem;
-  margin-bottom: 2.5rem;
+  margin: 2rem 0 2.5rem 1.5rem;
   display: block;
 }
 
@@ -70,8 +76,8 @@ section {
   font-size: 1.8rem;
   position: absolute;
   font-style: italic;
-  left: 100px;
-  top: 30px;
+  left: 6.25rem;
+  top: 1.875rem;
   z-index: -1;
   width: fit-content;
 }
@@ -89,9 +95,43 @@ section {
   font-size: 1.8rem;
   position: absolute;
   font-style: italic;
-  left: 100px;
-  top: 30px;
+  left: 6.25rem;
+  top: 1.875rem;
   z-index: -1;
+}
+
+//Global media
+
+@media (min-width: 800px) {
+  .main_title {
+    margin: 5rem 0 2.5rem 1.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .cta_group {
+    a {
+      font-size: 1rem;
+    }
+  }
+  .main_title:after, .second_title:after {
+    left: 12rem;
+    top: 2.5rem;
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  p{
+    font-size: 1.2rem;
+  }
+  section {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .main_title {
+    margin-left: 6rem;
+  }
 }
 
 //Hidden classes

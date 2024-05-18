@@ -59,6 +59,7 @@
         </section>
         <section class="color">
             <h2 class="color__title">Palette de couleur</h2>
+            <p>Retrouver pour chacun de mes projets les 3 couleurs principales de celui-ci, elle vous plaise et vous souhaitez les utiliser également il vous suffit de <span>cliquer sur la couleur de votre choix !</span> </p>
             <ul class="color__container">
                 <?php if (have_rows('color-list')) :
                     while (have_rows('color-list')) : the_row();

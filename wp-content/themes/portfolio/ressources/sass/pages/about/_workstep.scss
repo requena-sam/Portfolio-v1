@@ -1,13 +1,13 @@
 .workstep {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   &__title {
     margin-bottom: 6rem;
 
     &:after {
-      content: 'Les étapes dans mon travail';
+      content: 'Les étapes de mon travail';
       color: $orange;
-      top: 60px;
-      left: 10px;
+      left: 11.25rem;
+      top: 2.875rem;
     }
   }
 
@@ -16,14 +16,13 @@
     display: flex;
     gap: 2rem;
     overflow: scroll;
-    max-width: 302px;
+    max-width: 18.75rem;
 
     &__item {
       border-radius: 10px;
       padding: 1.5rem;
       position: relative;
       background: #0c0c0c;
-      position: relative;
 
       &__article {
 
@@ -35,8 +34,8 @@
         text-align: center;
         font-family: $poppins;
         color: white;
-        width: 250px;
-        height: 350px;
+        width: 15.625rem;
+        height: 21.875rem;
 
         &__title {
           font-size: 1.2rem;
@@ -45,10 +44,37 @@
         }
 
         &__text {
-          max-width: 220px;
+          max-width: 13.75rem;
         }
       }
     }
   }
+}
+@media (min-width: 800px) {
+  .workstep{
+    &__container{
+      max-width: 21.75rem;
+      &__item{
+        &__article{
+          width: 17.625rem;
+          height: 23.875rem;
 
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .workstep{
+    &__container{
+      max-width: 24.75rem;
+      &__item {
+        &__article {
+          width: 20.625rem;
+          height: 26.875rem;
+        }
+      }
+     }
+  }
 }

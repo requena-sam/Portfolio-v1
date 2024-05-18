@@ -1,22 +1,53 @@
 .skills {
- &__title{
-   &:after{
-     content: 'Outils de développements';
-     color: $bleu;
-     left: 20px;
-     top:60px;
-   }
- }
-&__container{
-  margin: 5rem auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 1rem;
-  justify-items: center;
-}
+  &__title {
+    &:after {
+      content: 'Outils de développements';
+      color: $bleu;
+      left: 1.25rem;
+      top: 3.75rem;
+    }
+  }
+
+  &__container {
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+  }
 
   img {
-    max-width: 50px;
+    width: 3.125rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .skills {
+    &__title {
+      &:after {
+        left: 12rem;
+        top: 2.5rem;
+      }
+    }
+
+    &__container {
+      margin: 6rem 0;
+    }
+
+    img {
+      width: 5rem;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .skills {
+    &__container{
+      margin: 10rem 0;
+    }
+    img {
+      width: 7rem;
+    }
   }
 }
 

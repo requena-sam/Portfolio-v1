@@ -18,20 +18,65 @@
     font-family: $poppins;
     display: flex;
     flex-direction: column;
-    font-size: 0.9rem;
 
     &__tools {
       margin: 2rem 0 1rem;
+
       h2 {
         color: $orange;
 
       }
-      ul{
+
+      ul {
         display: flex;
         gap: 0.5rem;
-        li{
-          img{
-            width: 45px;
+
+        li {
+          img {
+            width: 2.813rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .informations {
+    grid-template-columns: 0.9fr 1.1fr;
+    margin: 5rem 0 7rem;
+    gap: 2rem;
+
+    &__img {
+      order: 0;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    &__text {
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .informations {
+    grid-template-columns: 1fr 1fr;
+
+    &__img {
+      max-width: 30rem;
+
+    }
+
+    &__text {
+      &__tools {
+        ul {
+          li {
+            img {
+              width: 5rem;
+            }
           }
         }
       }

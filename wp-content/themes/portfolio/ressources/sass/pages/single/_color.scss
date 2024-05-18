@@ -1,34 +1,21 @@
 .color {
   margin-top: 4rem;
-
+p{
+  font-family: $poppins;
+  span{
+    color: $orange;
+    font-weight: 700;
+  }
+}
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 3rem 0 12rem;
-
-    &:after {
-      content: "";
-      background-image: url("../../../img/click_to_copy.png");
-      background-size: 100%;
-      background-repeat: no-repeat;
-      height: 200px;
-      width: 200px;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-top: 8rem;
-    }
-
+    margin: 3rem 0 4rem;
     li {
       padding: 2.5rem 0;
 
       p {
-        font-family: $poppins;
-        font-size: 1.2rem;
-        font-weight: 500;
-        text-align: center;
         opacity: 0;
-        transition: 0.2s linear;
       }
     }
 
@@ -43,19 +30,19 @@
 }
 
 .color__container__item {
-  position: relative; /* Définition de la position relative pour positionner la boîte de dialogue */
+  position: relative;
 }
 
 .color__container__item__copy {
   font-family: $poppins;
   position: absolute;
   display: inline-block;
-  top: -40px;
+  top: -2.5rem;
   left: 50%;
   transform: translateX(-50%);
   background: $orange;
   color: black;
-  padding: 8px 10px;
+  padding: 0.5rem 0.625rem;
   border-radius: 4px;
   font-size: 0.6rem;
   font-weight: 700;
@@ -66,4 +53,14 @@
 
 .color__container__item.copied .color__container__item__copy {
   opacity: 1;
+}
+
+@media (min-width: 800px) {
+  .color{
+    ul{
+      li{
+        padding: 5rem 0
+      }
+    }
+  }
 }

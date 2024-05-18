@@ -1,10 +1,9 @@
 .about_title:after{
   content: 'A propos de moi';
   color: $orange;
-  left: 60px;
+  left: 3.75rem;
 }
 .about{
-
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -12,6 +11,9 @@
     padding: 1.5rem;
     background: #0c0c0c;
     border-radius: 10px;
+    img{
+      height: 100%;
+    }
   }
   &__content{
     font-family: $poppins;
@@ -22,12 +24,28 @@
       font-size: 1.5rem;
       font-weight: 700;
       span{
-        margin-top: 15px;
+        margin-top: 1rem;
         display: block;
         font-family: Quantum, Times, serif;
         font-size: 1.15rem;
         color: $orange;
         font-weight: initial;
+      }
+    }
+  }
+}
+@media (min-width: 800px) {
+  .about{
+    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    &__content{
+      justify-content: center;
+      h3{
+        font-size: 1.8rem;
+        span{
+          font-size: 1.45rem;
+        }
       }
     }
   }
