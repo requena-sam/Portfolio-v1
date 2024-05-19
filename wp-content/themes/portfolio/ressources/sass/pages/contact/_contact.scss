@@ -1,0 +1,41 @@
+.contact_title {
+  &:after {
+    content: 'Me contacter';
+    color: $orange;
+  }
+}
+
+.contact {
+  font-family: $poppins;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3rem;
+
+
+  h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  img{
+    width: 60%
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    b {
+      font-weight: 600;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+}
+
+
