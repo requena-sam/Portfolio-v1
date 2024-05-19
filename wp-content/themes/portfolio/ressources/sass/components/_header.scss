@@ -22,9 +22,17 @@
           text-transform: uppercase;
           font-weight: 900;
           color: #0c0c0c;
+          :hover {
+            color: $orange;
+          }
         }
       }
     }
+  }
+}
+@media (min-width: 1150px) {
+  .navigation{
+    padding: 1.5rem 6rem
   }
 }
 
