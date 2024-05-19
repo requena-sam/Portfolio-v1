@@ -199,3 +199,16 @@ function restrict_message_pages() {
         exit;
     }
 }
+//Restriction de l'accès à l'administration
+/*add_action('admin_init', 'restrict_all_users');
+function restrict_all_users() {
+    remove_menu_page('index.php'); // Dashboard
+    remove_menu_page('edit.php'); // Posts
+    remove_menu_page('upload.php'); // Media
+    remove_menu_page('edit-comments.php'); // Comments
+    remove_menu_page('plugins.php'); // Plugins
+    remove_menu_page('tools.php'); // Tools
+    remove_menu_page('options-general.php'); // Settings
+    remove_menu_page('edit.php?post_type=acf-field-group'); // ACF
+    remove_menu_page('options-general.php?page=options-framework'); // Options
+}*/
