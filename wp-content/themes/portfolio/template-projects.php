@@ -18,7 +18,7 @@
                                  tabindex="0">
                             <div class="projects__card__content">
                                 <h3 role="heading" aria-level="3" itemprop="name"><?= $title; ?></h3>
-                                <span itemprop="genre" class="projects__card__content__category_web"><?= $category; ?></span>
+                                <span itemprop="genre" class="projects__card__content__category_<?= get_sub_field('category-prefix');?>"><?= $category; ?></span>
                                 <p itemprop="description"><?= $text; ?></p>
                             </div>
                             <div class="projects__card__img">

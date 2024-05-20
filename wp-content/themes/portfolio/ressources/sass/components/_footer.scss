@@ -21,6 +21,9 @@
         font-family: Poppins, Helvetica, sans-serif;
         text-transform: uppercase;
         font-weight: 500;
+        &:hover{
+          color: $orange;
+        }
       }
     }
   }
@@ -81,6 +84,9 @@
       color: white;
       text-transform: uppercase;
       font-weight: 500;
+      &:hover{
+        color: $orange;
+      }
     }
   }
 }

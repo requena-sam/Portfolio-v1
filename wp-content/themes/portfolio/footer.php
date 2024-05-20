@@ -69,7 +69,7 @@
     <hr><!--Barre de séparation-->
     <div class="footer__bottom">
         <p>© 2024 Sam Requena. Tous droits réservés.</p>
-        <a href="">Politique de confidentialés</a>
+        <a href="<?=get_field('footer-confi-link', 'options');?>">Politique de confidentialés</a>
     </div>
 </footer>
 </body>

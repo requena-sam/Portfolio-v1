@@ -3,14 +3,22 @@
     <div class="reviews__slider">
         <div class="reviews__slider__container">
             <?php if (have_rows('review-list')) :
+                $index = 0;
                 while (have_rows('review-list')) : the_row();
                     ?>
                     <article class="reviews__slider__container__article">
                         <p>"<?= get_sub_field('review-text'); ?>"</p>
                         <p class="reviews__slider__container__article__name"><?= get_sub_field('review-name'); ?></p>
                     </article>
-                <?php endwhile;
+                <?php
+                    $index++;
+                endwhile;
             endif; ?>
+        </div>
+        <div class="slider-bullets">
+            <?php for ($i = 0; $i < $index; $i++) : ?>
+                <div class="bullet" data-index="<?= $i ?>"></div>
+            <?php endfor; ?>
         </div>
     </div>
     <div class="reviews__cta cta_group">

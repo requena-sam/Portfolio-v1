@@ -1,4 +1,8 @@
 //Global config
+body{
+  max-width: 2000px;
+  margin: 0 auto;
+}
 img {
   width: 100%;
   height: auto;
@@ -24,21 +28,44 @@ section {
 .cta_group {
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 1.6rem;
   align-items: center;
 
   &__primary_btn {
-    background: $orange;
+    background-color: $orange;
     border-radius: 5px;
+    padding: 0.8rem 1.5rem;
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.2s ease;
+    }
   }
 
+
   &__secondary_btn {
+    display: inline-block;
     position: relative;
+    color: black;
     padding: 0.8rem 1.5rem 0.8rem 0;
-    z-index: -1;
-
-
     &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      top: 80%;
+      left: 0;
+      background-color: black;
+      transform-origin: bottom right;
+      transition: transform .4s cubic-bezier(.86, 0, .07, 1);
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    &:before {
       content: "";
       background-image: url("../../img/fleche.png");
       background-size: 100%;
@@ -52,16 +79,16 @@ section {
   }
 
 
-  a {
-    display: block;
-    text-decoration: none;
-    font-family: $poppins;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #0c0c0c;
-    padding: 0.8rem 1.5rem;
-  }
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: $poppins;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0c0c0c;
 }
 
 .main_title {
@@ -122,7 +149,7 @@ section {
 }
 
 @media (min-width: 1150px) {
-  p{
+  p {
     font-size: 1.2rem;
   }
   section {

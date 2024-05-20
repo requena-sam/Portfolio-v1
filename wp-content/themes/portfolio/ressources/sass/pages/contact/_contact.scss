@@ -8,16 +8,17 @@
 .contact {
   font-family: $poppins;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   margin-top: 3rem;
+  grid-row-gap: 4rem;
 
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 700;
   }
-  img{
+
+  img {
     width: 60%
   }
 
@@ -34,6 +35,16 @@
       display: flex;
       flex-direction: column;
       gap: 0.8rem;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .contact {
+    grid-template-columns: 1fr 1fr;
+
+    h3 {
+      font-size: 1.8rem;
     }
   }
 }

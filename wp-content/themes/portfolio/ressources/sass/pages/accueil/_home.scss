@@ -24,6 +24,19 @@
     text-transform: uppercase;
     font-weight: 900;
     text-align: center;
+
+    &:after {
+      content: '';
+      background-image: url("../../../img/scroll_arrow.png");
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      padding: 20px 20px;
+      display: block;
+      width: fit-content;
+      margin: -0.8rem auto;
+    }
   }
 }
 

@@ -14,7 +14,7 @@
                     <p><b>Ou me joindre ici</b></p>
                     <p><?= get_field('contact-phone'); ?></p>
                 </div>
-                <img src="<?= get_field('contact-illu'); ?>" alt="Illustration de contact">
+                <img class="mobile_hidden" src="<?= get_field('contact-illu'); ?>" alt="Illustration de contact">
             </div>
             <div class="contact__container">
                 <h3>Formulaire de contact</h3>

@@ -43,22 +43,23 @@
         </section>
         <section class="workstep">
             <h2 class="workstep__title second_title"><?= get_field('workstep-title'); ?></h2>
-            <ol class="workstep__container">
-                <?php if (have_rows('workstep-list')) :
+            <div class="workstep__container">
+                <?php
+                $counter = 1; // Initialisation du compteur
+                if (have_rows('workstep-list')) :
                     while (have_rows('workstep-list')) :
                         the_row();
                         $stepTitle = get_sub_field('title');
                         $stepDescription = get_sub_field('description');
                         ?>
-                        <li class="workstep__container__item">
-                            <article class="workstep__container__item__article">
-                                <h3 class="workstep__container__item__article__title"><?= $stepTitle; ?></h3>
-                                <p class="workstep__container__item__article__text"><?= $stepDescription; ?></p>
-                            </article>
-                        </li>
+                        <article class="workstep__container__article">
+                            <span><?= $counter++; ?></span> <!-- Utilisation du compteur et incrémentation -->
+                            <h3 class="workstep__container__article__title"><?= $stepTitle; ?></h3>
+                            <p class="workstep__container__article__text"><?= $stepDescription; ?></p>
+                        </article>
                     <?php endwhile;
                 endif; ?>
-            </ol>
+            </div>
         </section>
         <?php get_template_part('components/collab'); ?>
     </main>

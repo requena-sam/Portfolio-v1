@@ -1,7 +1,8 @@
 .reviews {
   margin-top: 3rem;
-  &__title{
-    &:after{
+
+  &__title {
+    &:after {
       content: 'Retours client';
       color: $bleu;
     }
@@ -17,6 +18,7 @@
       flex-direction: row;
       gap: 2rem;
       padding: 1.5rem;
+      scroll-behavior: smooth;
 
       &__article {
         font-family: Poppins, Helvetica, sans-serif;
@@ -34,18 +36,40 @@
         }
       }
     }
+
+    .slider-bullets {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1.5rem 0 2.5rem;
+
+      .bullet {
+        padding: 5px 5px;
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        &.active {
+          background-color: $bleu;
+          padding: 5px 15px;
+        }
+      }
+    }
   }
+
   &__cta {
     margin: 0 auto;
   }
 }
+
 @media (min-width: 800px) {
-  .reviews{
-    &__slider{
+  .reviews {
+    &__slider {
       margin-top: 6rem;
       max-width: 30rem;
-      &__container{
-        &__article{
+
+      &__container {
+        &__article {
           font-size: 1.5rem;
         }
       }
@@ -54,11 +78,12 @@
 }
 
 @media (min-width: 1150px) {
-  .reviews{
-    &__slider{
+  .reviews {
+    &__slider {
       max-width: 35rem;
-      &__container{
-        &__article{
+
+      &__container {
+        &__article {
           font-size: 1.5rem;
         }
       }

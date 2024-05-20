@@ -1,0 +1,36 @@
+.confidential{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-family: $poppins;
+  max-width: 55rem;
+  &__update{
+    font-size: 1.5rem;
+    font-weight: 600;
+    span{
+      font-family: Quantum, Times, serif;
+      font-size: 1.2rem;
+      color: $orange;
+    }
+  }
+  &__card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    h3{
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    p{
+      a{
+        font-weight: initial;
+        text-transform: initial;
+        display: inline-block;
+        text-decoration: underline;
+        font-size: 1.1rem;
+      }
+    };
+  }
+}

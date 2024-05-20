@@ -1,2 +1,5 @@
 import {color} from './color.js';
-color.init()
+import {slider} from './slider.js';
+
+color.init();
+slider.init();
