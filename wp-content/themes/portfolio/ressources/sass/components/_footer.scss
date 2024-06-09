@@ -1,8 +1,7 @@
 #footer {
   h3 {
-    font-family: Poppins, Helvetica, sans-serif;
+    font-family: $poppins_bold;
     font-size: 1rem;
-    font-weight: 700;
     color: white;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -18,9 +17,8 @@
         font-size: 0.9rem;
         text-decoration: none;
         color: white;
-        font-family: Poppins, Helvetica, sans-serif;
+        font-family: $poppins_medium;
         text-transform: uppercase;
-        font-weight: 500;
         &:hover{
           color: $orange;
         }
@@ -72,7 +70,7 @@
     flex-direction: column;
     gap: 1rem;
     color: white;
-    font-family: Poppins, Helvetica, sans-serif;
+    font-family: $poppins_medium;
 
     p {
       font-size: 0.8rem;
@@ -83,7 +81,7 @@
       text-decoration: none;
       color: white;
       text-transform: uppercase;
-      font-weight: 500;
+      font-family: $poppins_medium;
       &:hover{
         color: $orange;
       }

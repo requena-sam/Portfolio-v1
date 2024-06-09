@@ -15,7 +15,7 @@
   h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-family: $poppins_bold;
   }
 
   img {
@@ -28,7 +28,7 @@
     gap: 2rem;
 
     b {
-      font-weight: 600;
+      font-family: $poppins_semibold;
     }
 
     &__item {

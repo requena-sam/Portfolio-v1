@@ -3,7 +3,7 @@
 
   &__title {
     &:after {
-      content: 'Retours client';
+      content: 'Retours clients';
       color: $bleu;
     }
   }
@@ -21,18 +21,17 @@
       scroll-behavior: smooth;
 
       &__article {
-        font-family: Poppins, Helvetica, sans-serif;
+        font-family: $poppins_medium;
         font-size: 1.2rem;
         min-width: 100%;
         max-width: 100%;
-        font-weight: 500;
         font-style: italic;
 
         &__name {
           text-align: end;
           color: $bleu;
           margin-top: 4rem;
-          font-family: Quantum, Times, serif;
+          font-family: $quantum;
         }
       }
     }

@@ -31,9 +31,8 @@
         text-decoration: none;
         font-size: 1.5rem;
         color: white;
-        font-family: Poppins, Helvetica, sans-serif;
+        font-family: $poppins_bold;
         text-transform: uppercase;
-        font-weight: 700;
 
         img {
           height: 25rem;
@@ -60,7 +59,7 @@
     &:after{
       position: absolute;
       content: '';
-      background-image: url("../../../img/trait_orange.png");
+      background-image: url("../img/trait_orange.png");
       background-position: center;
       background-size: cover;
       width: 100%;

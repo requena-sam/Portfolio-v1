@@ -1,7 +1,7 @@
 <footer role="contentinfo" tabindex="0" class="footer" id="footer">
     <h2 role="heading" aria-level="2" class="hidden">Footer</h2>
     <div class="footer__upper">
-        <div class="footer__upper__social">
+        <div data-animation="showUp" class="footer__upper__social">
             <h3 role="heading" aria-level="3">Me suivre</h3>
             <ul role="list" id="social">
                 <?php if (have_rows('follow-list', 'option')) :
@@ -10,7 +10,7 @@
                         $link = get_sub_field('follow-link');
                         ?>
                         <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                            <a href="<?= $link; ?>" tabindex="0" title="Vers la page" itemprop="url">
+                            <a href="<?= $link; ?>" tabindex="0" title="Vers la page du réseau" itemprop="url">
                                 <img class="social_logo" src="<?= $image; ?>" alt="">
                             </a>
                         </li>
@@ -18,10 +18,10 @@
                 endif; ?>
             </ul>
         </div>
-        <div class="footer__upper__container">
+        <div data-animation="showUp" class="footer__upper__container">
             <div class="footer__upper__container__contact">
-                <h3 role="heading" aria-level="3">Contacter moi</h3>
-                <ul>
+                <h3 role="heading" aria-level="3">Contact</h3>
+                <ul role="list">
                     <li>
                         <a title="Envoyer un mail à Sam Requena" href="mailto:samrequena1510@gmail.com">Email</a>
                     </li>
@@ -66,11 +66,13 @@
             </div>
         </div>
     </div>
-    <hr><!--Barre de séparation-->
-    <div class="footer__bottom">
+    <hr data-animation="showUp"><!--Barre de séparation-->
+    <div data-animation="showUp" class="footer__bottom">
         <p>© 2024 Sam Requena. Tous droits réservés.</p>
-        <a href="<?=get_field('footer-confi-link', 'options');?>">Politique de confidentialés</a>
+        <a href="<?= get_field('footer-confi-link', 'options'); ?>" title="Vers la page de confidentialité">Politique de
+            confidentialités</a>
     </div>
 </footer>
+<script type="module" src="<?= dw_asset('js/site.js') ?>" defer></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <main>
         <h2 role="heading" aria-level="2" class="all_projects_title main_title">Mes projets</h2>
-        <section class="projects">
+        <section data-animation="showUp" class="projects">
             <h3 class="hidden" role="heading" aria-level="3">Liste de mes projets</h3>
             <?php if (have_rows('project-list')) :
                 while (have_rows('project-list')) : the_row();
@@ -13,8 +13,8 @@
                     $image = get_sub_field('image');
                     $link = get_sub_field('link');
                     ?>
-                    <a class="hover_card" href="<?= $link; ?>">
-                        <article class="projects__card" itemscope itemtype="http://schema.org/CreativeWork"
+                    <a class="hover_card" href="<?= $link; ?>" title="Ouvre le projet">
+                        <article data-animation="showUp" class="projects__card" itemscope itemtype="http://schema.org/CreativeWork"
                                  tabindex="0">
                             <div class="projects__card__content">
                                 <h3 role="heading" aria-level="3" itemprop="name"><?= $title; ?></h3>
@@ -30,7 +30,7 @@
                 <?php endwhile;
             endif;
             ?>
-            <p class="projects__end">Vous êtes arrivé au bout</p>
+            <p data-animation="showUp" class="projects__end">Vous êtes arrivés au bout</p>
         </section>
     </main>
 <?php endwhile; endif; ?>

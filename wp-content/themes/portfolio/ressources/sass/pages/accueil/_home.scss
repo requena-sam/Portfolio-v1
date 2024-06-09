@@ -19,15 +19,15 @@
 
   &__scroll {
     margin: 0.5rem 0;
-    font-family: Poppins, Helvetica, sans-serif;
+    font-family: $poppins_black;
     font-size: 1.5rem;
     text-transform: uppercase;
-    font-weight: 900;
     text-align: center;
+    animation: jump 1.5s infinite;
 
     &:after {
       content: '';
-      background-image: url("../../../img/scroll_arrow.png");
+      background-image: url("../img/scroll_arrow.png");
       background-size: 80%;
       background-repeat: no-repeat;
       background-position: center;

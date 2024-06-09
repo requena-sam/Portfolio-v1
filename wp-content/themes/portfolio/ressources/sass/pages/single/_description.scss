@@ -35,16 +35,18 @@
   .back_projects {
     position: relative;
     padding: 0 3rem;
-    font-family: $poppins;
+    font-family: $poppins_semibold;
     font-size: 1.2rem;
     text-decoration: none;
     color: #0c0c0c;
-    font-weight: 500;
     text-transform: uppercase;
+    &:hover{
+      color: $orange;
+    }
 
     &:before {
       content: "";
-      background-image: url("../../../img/fleche.png");
+      background-image: url("../img/fleche.png");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;

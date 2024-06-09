@@ -2,4 +2,41 @@
 
 $orange: #ffa724;
 $bleu: #66A3FF;
-$poppins: Poppins, Helvetica, sans-serif;
+$poppins: 'Poppins-Regular', Helvetica, sans-serif;
+$poppins_medium: 'Poppins-Medium', Helvetica, sans-serif;
+$poppins_bold: 'Poppins-Bold', Helvetica, sans-serif;
+$poppins_black: 'Poppins-Black', Helvetica, sans-serif;
+$poppins_extra_bold: 'Poppins-ExtraBold', Helvetica, sans-serif;
+$poppins_semibold: 'Poppins-Semibold', Helvetica, sans-serif;
+$quantum: 'Quantum', Times, serif;
+
+@font-face {
+    font-family: 'Quantum';
+    src: url('../font/Quantum.otf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+ font-family: 'Poppins-Regular';
+    src: url("../font/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url("../font/Poppins-Medium.ttf");
+
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url("../font/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url("../font/Poppins-Black.ttf");
+}
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url("../font/Poppins-ExtraBold.ttf");
+}
+@font-face {
+    font-family: 'Poppins-Semibold';
+    src: url("../font/Poppins-SemiBold.ttf");
+}

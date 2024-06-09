@@ -10,15 +10,14 @@ p{
   text-align: center;
   display: block;
   width: 100%;
-  font-family: Poppins, Helvetica, sans-serif;
-  font-weight: 500;
+  font-family: $poppins_medium;
   a{
     font-size: 1rem;
     text-transform: initial;
     display: initial;
     text-decoration: none;
     color: #0c0c0c;
-    font-weight: 700;
+    font-family: $poppins_bold;
   }
 }
 

@@ -1,8 +1,28 @@
 //Global config
-body{
+body {
   max-width: 2000px;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1700px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1900px) {
+  html {
+    font-size: 24px;
+  }
+}
+
 img {
   width: 100%;
   height: auto;
@@ -15,8 +35,7 @@ p {
 
 h2 {
   font-size: 2rem;
-  font-family: $poppins;
-  font-weight: 900;
+  font-family: $poppins_black;
   text-transform: uppercase;
   margin: 1rem 0;
 }
@@ -35,6 +54,7 @@ section {
     background-color: $orange;
     border-radius: 5px;
     padding: 0.8rem 1.5rem;
+
     &:hover {
       transform: scale(1.05);
       transition: 0.2s ease;
@@ -47,6 +67,7 @@ section {
     position: relative;
     color: black;
     padding: 0.8rem 1.5rem 0.8rem 0;
+
     &:after {
       content: '';
       position: absolute;
@@ -67,7 +88,7 @@ section {
 
     &:before {
       content: "";
-      background-image: url("../../img/fleche.png");
+      background-image: url("../img/fleche.png");
       background-size: 100%;
       background-repeat: no-repeat;
       height: 1.25rem;
@@ -84,9 +105,8 @@ section {
 a {
   display: block;
   text-decoration: none;
-  font-family: $poppins;
+  font-family: $poppins_bold;
   font-size: 0.8rem;
-  font-weight: 700;
   text-transform: uppercase;
   color: #0c0c0c;
 }
@@ -95,17 +115,18 @@ a {
   position: relative;
   margin: 2rem 0 2.5rem 1.5rem;
   display: block;
+  z-index: -1;
 }
 
 .main_title:after {
-  font-family: Quantum, Times, serif;
+  font-family: $quantum;
   text-transform: initial;
   font-size: 1.8rem;
   position: absolute;
   font-style: italic;
   left: 6.25rem;
   top: 1.875rem;
-  z-index: -1;
+  z-index: -2;
   width: fit-content;
 }
 
@@ -113,10 +134,11 @@ a {
   position: relative;
   margin-bottom: 2.5rem;
   display: block;
+  z-index: -1;
 }
 
 .second_title:after {
-  font-family: Quantum, Times, serif;
+  font-family: $quantum;
   width: fit-content;
   text-transform: initial;
   font-size: 1.8rem;
@@ -124,7 +146,7 @@ a {
   font-style: italic;
   left: 6.25rem;
   top: 1.875rem;
-  z-index: -1;
+  z-index: -2;
 }
 
 //Global media
@@ -207,4 +229,43 @@ a {
     width: 1px;
   }
 }
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+
+}
+
+@keyframes showUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.showUp {
+  opacity: 1;
+  transition: 0.5s;
+  animation: showUp 1s;
+
+}
+
+.opacity-none {
+  opacity: 0;
+}
+
 

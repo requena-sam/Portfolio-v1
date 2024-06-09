@@ -1,17 +1,21 @@
 @media (max-width: 800px) {
   .navigation {
+    position: relative;
+    top: 0;
+    z-index: 2;
+
     &__container {
-      position: relative;
-      transform: translateY(-130vh);
+      opacity: 0;
+      transform: translateY(-100vh);
       transition: 0.3s ease;
 
       &__menu {
         position: absolute;
-        height: 97vh;
+        height: 90vh;
         width: 100vw;
         top: 0;
         left: 0;
-        background: #0c0c0c;
+        background: #ffffff;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -20,16 +24,17 @@
 
         li {
           a {
-            color: white;
+            color: #000000;
             text-decoration: none;
-            font-size: 2.5rem;
-            font-family: Poppins, Helvetica, sans-serif;
+            font-size: 2.2rem;
+            font-family: $poppins_extra_bold;
             text-transform: uppercase;
-            font-weight: 800;
-            :hover{
+
+            :hover {
               color: $bleu;
             }
-            :active{
+
+            :active {
               color: $orange;
             }
           }
@@ -88,8 +93,8 @@
   .input:checked ~ .menu-icon .navicon {
     background: transparent;
   }
-  .input:checked ~ .menu-icon{
-    background: #0c0c0c;
+  .input:checked ~ .menu-icon {
+    background: #ffffff;
   }
 
   .input:checked ~ .menu-icon .navicon:before {
@@ -109,5 +114,6 @@
 
   .input:checked ~ .navigation__container {
     transform: translateY(0);
+    opacity: 100;
   }
 }

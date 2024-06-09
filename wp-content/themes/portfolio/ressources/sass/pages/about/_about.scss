@@ -22,11 +22,11 @@
     gap: 1rem;
     h3{
       font-size: 1.5rem;
-      font-weight: 700;
+      font-family: $poppins_bold;
       span{
         margin-top: 1rem;
         display: block;
-        font-family: Quantum, Times, serif;
+        font-family: $quantum;
         font-size: 1.15rem;
         color: $orange;
         font-weight: initial;

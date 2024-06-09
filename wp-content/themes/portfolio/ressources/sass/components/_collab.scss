@@ -6,7 +6,7 @@
   flex-direction: column;
   gap: 2rem;
   &__title{
-    font-family: Quantum, Times, serif;
+    font-family: $quantum;
     font-size: 1.5rem;
     color: $bleu;
   }

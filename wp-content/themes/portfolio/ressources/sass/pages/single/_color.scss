@@ -4,7 +4,7 @@ p{
   font-family: $poppins;
   span{
     color: $orange;
-    font-weight: 700;
+    font-family: $poppins_bold;
   }
 }
   ul {
@@ -34,7 +34,7 @@ p{
 }
 
 .color__container__item__copy {
-  font-family: $poppins;
+  font-family: $poppins_bold;
   position: absolute;
   display: inline-block;
   top: -2.5rem;
@@ -45,7 +45,6 @@ p{
   padding: 0.5rem 0.625rem;
   border-radius: 4px;
   font-size: 0.6rem;
-  font-weight: 700;
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;

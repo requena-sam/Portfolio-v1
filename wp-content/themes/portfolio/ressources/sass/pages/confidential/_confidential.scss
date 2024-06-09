@@ -6,9 +6,9 @@
   max-width: 55rem;
   &__update{
     font-size: 1.5rem;
-    font-weight: 600;
+    font-family: $poppins_semibold;
     span{
-      font-family: Quantum, Times, serif;
+      font-family: $quantum;
       font-size: 1.2rem;
       color: $orange;
     }
@@ -20,12 +20,12 @@
     h3{
       font-size: 1.6rem;
       text-transform: uppercase;
-      font-weight: 700;
+      font-family: $poppins_bold;
     }
 
     p{
       a{
-        font-weight: initial;
+        font-family: $poppins;
         text-transform: initial;
         display: inline-block;
         text-decoration: underline;
