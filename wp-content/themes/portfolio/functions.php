@@ -229,5 +229,9 @@ function restrict_all_users() {
     remove_menu_page('edit.php?post_type=acf-field-group'); // ACF
     remove_menu_page('options-general.php?page=options-framework'); // Options
 }
+function dw_is_active(string $path): string
+{
+    return wp_get_canonical_url() === $path ? 'active' : '';
+}
 
 

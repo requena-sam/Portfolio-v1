@@ -16,3 +16,5 @@ mix.copyDirectory('wp-content/themes/portfolio/ressources/img',
 /* Fonts */
 mix.copyDirectory('wp-content/themes/portfolio/ressources/font',
     'wp-content/themes/portfolio/public/font');
+/* Favicon */
+mix.copyDirectory('wp-content/themes/portfolio/ressources/favicon', 'wp-content/themes/portfolio/public/favicon');

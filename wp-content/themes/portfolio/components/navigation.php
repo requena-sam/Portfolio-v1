@@ -13,7 +13,7 @@
                     $link = get_sub_field('link');
                     ?>
                     <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                        <a href="<?= $link; ?>" tabindex="0" title="Vers la page <?= $text; ?>" itemprop="url">
+                        <a href="<?= $link; ?>" tabindex="0" title="Vers la page <?= $text; ?>" itemprop="url" class="<?=dw_is_active($link);?>">
                             <span itemprop="name"><?= $text; ?></span>
                         </a>
                     </li>

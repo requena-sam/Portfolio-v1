@@ -21,14 +21,17 @@
     <link rel="stylesheet" href="<?= dw_asset('css/site.css') ?>">
     <!-- Link js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
-
     <!-- Meta details -->
-    <link rel="canonical" href="https://samrequena.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./public/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./public/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <!-- Title -->
     <title>
-        <?php
-        get_bloginfo('name');
-        ?>
+        Sam Requena - Développeur Web
     </title>
 </head>
 <body itemscope itemtype="https://schema.org/Person">
