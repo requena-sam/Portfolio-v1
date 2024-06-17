@@ -35,7 +35,7 @@ Le but de ce site est de :
 Pour découvrir mon portfolio, visitez le site à l'adresse suivante : **https://samrequena.be/**
 
 ## Me Contacter 📞✉️
-- - **Email** : [Cliquez ici pour envoyer un email](mailto:samrequena1510@gmail.com)
+- **Email** : [Cliquez ici pour envoyer un email](mailto:samrequena1510@gmail.com)
 
 ---
 
