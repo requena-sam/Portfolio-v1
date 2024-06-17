@@ -35,7 +35,7 @@ Le but de ce site est de :
 Pour découvrir mon portfolio, visitez le site à l'adresse suivante : **https://samrequena.be/**
 
 ## Me Contacter 📞✉️
-- **Téléphone** : [Cliquez ici pour appeler](tel:+32472860218)
+- **Téléphone** : [Cliquez ici pour appeler](tel:+320472860218)
 - **Email** : [Cliquez ici pour envoyer un email](mailto:samrequena1510@gmail.com)
 
 ---
