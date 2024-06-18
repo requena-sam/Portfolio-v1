@@ -20,11 +20,11 @@ p{
     }
 
     li:first-child {
-      border-radius: 5px 0 0 5px;
+      border-radius: 0.5rem 0 0 0.5rem;
     }
 
     li:last-child {
-      border-radius: 0 5px 5px 0;
+      border-radius: 0 0.5rem 0.5rem 0;
     }
   }
 }
@@ -43,7 +43,7 @@ p{
   background: $orange;
   color: black;
   padding: 0.5rem 0.625rem;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   font-size: 0.6rem;
   text-transform: uppercase;
   opacity: 0;

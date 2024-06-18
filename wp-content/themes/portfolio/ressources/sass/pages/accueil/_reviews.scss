@@ -43,14 +43,14 @@
       margin: 1.5rem 0 2.5rem;
 
       .bullet {
-        padding: 5px 5px;
+        padding: 0.313rem;
         background-color: #e0e0e0;
-        border-radius: 10px;
+        border-radius: 0.625rem;
         cursor: pointer;
         transition: 0.3s ease;
         &.active {
           background-color: $bleu;
-          padding: 5px 15px;
+          padding: 0.313rem 1rem;
         }
       }
     }
